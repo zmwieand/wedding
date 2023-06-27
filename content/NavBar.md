@@ -1,4 +1,0 @@
----
-brand: "Jocelyn & Zachary"
-menuText: ""
----
