@@ -44,12 +44,18 @@
       border-color: darken($gray-400, 7.5%) !important;
       color: lighten($black, 7.5%) !important;
     }
+    &:active {
+      box-shadow: 0 0 0 0 #000 !important;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0 #000 !important;
+    }
   }
 }
 
 .venue-photo-block {
   .venue-photo{
-    background-color: #adb5bd;
+    // background-color: #adb5bd;
     border-color: black;
     border-radius: 50%;
     border-style: solid;

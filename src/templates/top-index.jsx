@@ -42,6 +42,10 @@ export const query = graphql`
           locationName
           address1
           address2
+          paragraph1
+          paragraph2
+          paragraph3
+          paragraph4
           time
           directionsUrl
           venueUrl

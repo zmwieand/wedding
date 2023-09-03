@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Button, Col, Row, Stack } from "react-bootstrap";
+import Image from "components/Image";
 import SectionHeader from "components/SectionHeader";
 import "./VenueItem.scss";
 
-const VenueItem = ({ header, locationName, address1, address2, time, directionsUrl, venueUrl }) => {
+const VenueItem = ({ header, locationName, address1, address2, time, directionsUrl, venueUrl, imageFileName }) => {
   return (
     <>
       <Row>
@@ -16,8 +17,8 @@ const VenueItem = ({ header, locationName, address1, address2, time, directionsU
 
       <Row>
         <Col className="venue-photo-block" xl={{ span: 3, offset: 3 }} md={{ span: 5, offset: 1 }} sm={{ span: 12, offset: 0 }}>
-          <a href={venueUrl}>
-            <div className="venue-photo"/>
+          <a href={venueUrl} target="_blank">
+            <Image className="venue-photo" fileName={imageFileName} alt="" />
           </a>
         </Col>
         <Col className="venue-block" xl={{ span: 3, offset: 0 }} md={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }}>
@@ -29,7 +30,7 @@ const VenueItem = ({ header, locationName, address1, address2, time, directionsU
               <p className="time">{time}</p>
             </div>
             <div className="directions-block">
-              <Button size="xl" className="directions-btn" href={directionsUrl}>
+              <Button size="xl" className="directions-btn" href={directionsUrl} target="_blank">
                 Get Directions
               </Button>
             </div>
@@ -48,6 +49,7 @@ VenueItem.propTypes = {
   time: PropTypes.string,
   directionsUrl: PropTypes.string,
   venueUrl: PropTypes.string,
+  imageFileName: PropTypes.string,
 };
 
 VenueItem.defaultProps = {
@@ -58,6 +60,7 @@ VenueItem.defaultProps = {
   time: "",
   directionsUrl: "#",
   venueUrl: "#",
+  imageFileName: "",
 };
 
 export default VenueItem;

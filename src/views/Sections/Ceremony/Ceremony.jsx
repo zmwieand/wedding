@@ -13,7 +13,7 @@ const Ceremony = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header: rootHeader, locationName, address1, address2, time, directionsUrl, venueUrl } = frontmatter;
+  const { anchor, header: rootHeader, locationName, address1, address2, time, directionsUrl, venueUrl, imageFileName } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -25,6 +25,7 @@ const Ceremony = ({ className, frontmatter }) => {
         time={time}
         directionsUrl={directionsUrl}
         venueUrl={venueUrl}
+        imageFileName={imageFileName}
       />
     </PageSection>
   );
