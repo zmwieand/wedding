@@ -32,14 +32,10 @@
   padding-top: 25px;
 
   .directions-btn {
-    // background-color: #568f56;  // Green
-    // border-color: #568f56;  // Green
-    background-color: $gray-400;  // Green
-    border-color: $gray-400;  // Green
+    background-color: $gray-400;
+    border-color: $gray-400;
     color: $black;
     &:hover {
-      // background-color: darken(#568f56, 7.5%) !important;
-      // border-color: darken(#568f56, 7.5%) !important;
       background-color: darken($gray-400, 7.5%) !important;
       border-color: darken($gray-400, 7.5%) !important;
       color: lighten($black, 7.5%) !important;
