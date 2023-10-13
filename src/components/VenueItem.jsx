@@ -17,7 +17,7 @@ const VenueItem = ({ header, locationName, address1, address2, time, directionsU
 
       <Row>
         <Col className="venue-photo-block" xl={{ span: 3, offset: 3 }} md={{ span: 5, offset: 1 }} sm={{ span: 12, offset: 0 }}>
-          <Image className="venue-photo" fileName={imageFileName} alt="" />
+          <img className="venue-photo" src={imageFileName} alt="" />
         </Col>
         <Col className="venue-block" xl={{ span: 3, offset: 0 }} md={{ span: 5, offset: 0 }} sm={{ span: 12, offset: 0 }}>
           <Stack gap={1}>
