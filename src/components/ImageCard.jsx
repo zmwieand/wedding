@@ -23,6 +23,9 @@ const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, date
             <br />
             {extraInfo}
           </div>
+          <div>
+            <a href="https://sheridanpaigephotography.com" target="_blank"><p className="photographer">Sheridan Paige Photography</p></a>
+          </div>
         </Container>
       </Card.ImgOverlay>
     </Card>
