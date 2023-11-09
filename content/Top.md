@@ -4,6 +4,6 @@ subheader: "We're Getting Married!"
 date: "June 15, 2024"
 
 imageFileName: "header-bg.jpg"
-jumpToAnchor: "Services"
-jumpToAnchorText: "RSVP (Coming Soon)"
+jumpToAnchor: "https://www.theknot.com/us/zachary-wieand-and-jocelyn-ruhland-jun-2024/rsvp"
+jumpToAnchorText: "RSVP"
 ---
